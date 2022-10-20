@@ -1,0 +1,24 @@
+version: "3.6"
+
+services:
+
+  consul:
+    image: consul:1.13.2
+    command: agent -server -ui -node=server1 -bootstrap-expect=1 -client=0.0.0.0
+    ports:
+      - "8500:8500"
+    networks:
+      - asos
+
+  gw:
+    build:
+      context: ./asos-gw
+    deploy:
+      mode: replicated
+      replicas: 5
+    networks:
+      - asos
+
+networks:
+  asos:
+    driver: bridge
