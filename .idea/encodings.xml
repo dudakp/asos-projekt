@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/add/add-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add/add-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add/add-inbound/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add/add-inbound/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add/application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add/application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gateway-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gw-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gw-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gw-inbound/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gw-inbound/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/subst/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/subst/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/subst/subst-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/subst/subst-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/subst/subst-inbound/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/subst/subst-inbound/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
