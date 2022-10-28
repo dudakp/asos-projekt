@@ -7,13 +7,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/add/add-application/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/gateway-application/pom.xml" />
+        <option value="$PROJECT_DIR$/subst/subst-application/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/add/application/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/gw-application/pom.xml" />
-        <option value="$PROJECT_DIR$/subst/subst-application/pom.xml" />
+        <option value="$PROJECT_DIR$/subst/pom.xml" />
       </set>
     </option>
   </component>

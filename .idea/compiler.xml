@@ -10,19 +10,21 @@
         <module name="gw-inbound" />
         <module name="gateway-application" />
         <module name="add-application" />
-        <module name="subst-inbound" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="application" target="17" />
       <module name="gw-application" target="17" />
+      <module name="subst" target="17" />
       <module name="subst-application" target="17" />
+      <module name="subst-inbound" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="add-application" options="-parameters" />
       <module name="gateway-application" options="-parameters" />
+      <module name="subst-application" options="-parameters" />
     </option>
   </component>
 </project>

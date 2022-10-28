@@ -1,4 +1,4 @@
-package sk.stu.fei.uim.gatewayapplication;
+package sk.stu.fei.uim.asos.gatewayapplication;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import sk.stu.fei.uim.asos.dto.req.AddRequestDto;
 import sk.stu.fei.uim.asos.dto.res.AddResponseDto;
-import sk.stu.fei.uim.gatewayapplication.feign.AddServiceClient;
+import sk.stu.fei.uim.asos.gatewayapplication.feign.AddServiceClient;
 
 @SpringBootApplication
 @EnableFeignClients
@@ -33,5 +33,4 @@ public class GatewayApplication {
     public AddResponseDto add(@RequestBody AddRequestDto req) {
         return addServiceClient.add(req);
     }
-
 }

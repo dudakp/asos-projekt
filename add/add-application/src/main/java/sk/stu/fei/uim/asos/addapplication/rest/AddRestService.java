@@ -17,6 +17,8 @@ public class AddRestService implements IAddRestService {
     @PutMapping
     @Override
     public AddResponseDto add(@RequestBody AddRequestDto req) {
+        //TODO: do konfiguracie pridat nejaku konstatntu ktora sa bude pripocitavat ku vysledku (result v
+        // AddResponseDto)
         return new AddResponseDto(req.a() + req.b(), req.a(), req.b(), source);
     }
 }
