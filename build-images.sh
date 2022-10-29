@@ -1,5 +1,16 @@
-#/bin/bash
+#!/bin/bash
+set -e
 
-./add/add-application/build-image.sh
-./subst/subst-application/build-image.sh
-./gateway/gateway-application/build-image.sh
+
+echo "building add application image"
+cd ./add/add-application/
+./mvnw clean install
+./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=asos/add
+echo "Built asos/gateway image"
+
+
+echo "building add application image"
+cd ../../gateway/gateway-application
+./mvnw clean install
+./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=asos/gateway
+echo "Built asos/gateway image"
