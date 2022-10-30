@@ -9,12 +9,3 @@ spring:
         instanceId: ${spring.application.name}:${random.value}
         enabled: true
       host: consul
-opentracing:
-  jaeger:
-    http-sender:
-      url: http://jaeger:14268/api/traces
-    log-spans: true
-logging:
-  level:
-    io:
-      jaegertracing: DEBUG

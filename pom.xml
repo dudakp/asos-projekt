@@ -10,7 +10,6 @@
     <modules>
         <module>gateway</module>
         <module>add</module>
-        <module>subst</module>
     </modules>
     <packaging>pom</packaging>
 
