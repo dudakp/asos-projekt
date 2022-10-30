@@ -24,6 +24,13 @@ services:
     networks:
       - asos
 
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+     - "16686:16686"
+    networks:
+      - asos
+
 networks:
   asos:
     driver: bridge
