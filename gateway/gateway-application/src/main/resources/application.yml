@@ -9,3 +9,6 @@ spring:
         instanceId: ${spring.application.name}:${random.value}
         enabled: true
       host: consul
+feign:
+  circuitbreaker:
+    enabled: true
