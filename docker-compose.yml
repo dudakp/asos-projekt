@@ -10,7 +10,19 @@ services:
     networks:
       - asos
 
+  git2consul:
+    depends_on:
+      - consul
+    image: cimpress/git2consul:latest
+    volumes:
+      - /Users/simon/Documents/IdeaProjects/asos-projekt/config.json:/config.json
+    command: --endpoint consul --port 8500 --config-file /config.json
+    networks:
+      - asos
+
   add:
+    depends_on:
+      - git2consul
     image: asos/add:latest
     deploy:
       mode: replicated

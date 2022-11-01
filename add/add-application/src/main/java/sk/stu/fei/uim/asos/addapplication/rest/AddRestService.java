@@ -14,11 +14,12 @@ public class AddRestService implements IAddRestService {
     @Value("${spring.cloud.consul.discovery.instanceId}")
     private String source;
 
+    @Value("${configNumber}")
+    private int configNumber;
+
     @PutMapping
     @Override
     public AddResponseDto add(@RequestBody AddRequestDto req) {
-        //TODO: do konfiguracie pridat nejaku konstatntu ktora sa bude pripocitavat ku vysledku (result v
-        // AddResponseDto)
-        return new AddResponseDto(req.a() + req.b(), req.a(), req.b(), source);
+        return new AddResponseDto(req.a() + req.b() + configNumber, req.a(), req.b(), source);
     }
 }
