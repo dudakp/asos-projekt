@@ -1,11 +1,10 @@
 spring:
-  application:
-    name: "gw"
   cloud:
     consul:
-      config:
-        enabled: false
       discovery:
         instanceId: ${spring.application.name}:${random.value}
         enabled: true
       host: consul
+feign:
+  circuitbreaker:
+    enabled: true

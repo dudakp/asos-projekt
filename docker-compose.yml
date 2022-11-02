@@ -10,7 +10,19 @@ services:
     networks:
       - asos
 
+  git2consul:
+    depends_on:
+      - consul
+    image: cimpress/git2consul:latest
+    volumes:
+      - ./config.json:/config.json
+    command: --endpoint consul --port 8500 --config-file /config.json
+    networks:
+      - asos
+
   add:
+    depends_on:
+      - git2consul
     image: asos/add:latest
     deploy:
       mode: replicated
@@ -18,16 +30,11 @@ services:
     networks:
       - asos
   gw:
+    depends_on:
+      - git2consul
     image: asos/gateway:latest
     ports:
       - "8080:8080"
-    networks:
-      - asos
-
-  jaeger:
-    image: jaegertracing/all-in-one:latest
-    ports:
-     - "16686:16686"
     networks:
       - asos
 

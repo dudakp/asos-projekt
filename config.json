@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "repos" : [{
+    "name" : "config",
+    "url" : "https://github.com/smooff/asos-consul-properties",
+    "branches" : ["main"],
+    "hooks": [{
+      "type" : "polling",
+      "interval" : "1"
+    }]
+  }]
+}
