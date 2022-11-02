@@ -9,7 +9,7 @@ import sk.stu.fei.uim.asos.dto.req.AddRequestDto;
 import sk.stu.fei.uim.asos.dto.res.AddResponseDto;
 import sk.stu.fei.uim.asos.rest.IAddRestService;
 
-@FeignClient(value = "add", fallback = AddServiceClient.AddServiceClientFallback.class)
+@FeignClient(value = "add-application", fallback = AddServiceClient.AddServiceClientFallback.class)
 public interface AddServiceClient extends IAddRestService {
     @Component
     @RequestMapping("/fallback")

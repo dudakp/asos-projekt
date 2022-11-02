@@ -15,7 +15,7 @@ services:
       - consul
     image: cimpress/git2consul:latest
     volumes:
-      - /Users/simon/Documents/IdeaProjects/asos-projekt/config.json:/config.json
+      - ./config.json:/config.json
     command: --endpoint consul --port 8500 --config-file /config.json
     networks:
       - asos
@@ -33,13 +33,6 @@ services:
     image: asos/gateway:latest
     ports:
       - "8080:8080"
-    networks:
-      - asos
-
-  jaeger:
-    image: jaegertracing/all-in-one:latest
-    ports:
-     - "16686:16686"
     networks:
       - asos
 
