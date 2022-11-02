@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(
-        url = "http://numbersapi.com",
+        url = "${numberFactsApi}",
         name = "ext-math-api",
         fallback = ExternalMathOperationsClient.ExternalMathOperationsClientFallback.class
 )

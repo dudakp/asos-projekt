@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: "gw-application"
+  cloud:
+    consul:
+      host: consul
+      port: 8500
+      config:
+        enabled: true
+        prefixes: config/main
+        data-key: data
+        format: yaml

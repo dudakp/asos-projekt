@@ -30,6 +30,8 @@ services:
     networks:
       - asos
   gw:
+    depends_on:
+      - git2consul
     image: asos/gateway:latest
     ports:
       - "8080:8080"
